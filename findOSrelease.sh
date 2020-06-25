@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 ######################## DETECTING OS ########################
 INFO=$(awk '\
 BEGIN {
