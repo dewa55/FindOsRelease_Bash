@@ -43,12 +43,12 @@ sudo mount -t iso9660 /dev/sr0 /mnt/iso/
 case $NAME in
     centos)
         if [ "$VERSION" == "7" ]; then
-            rpm -ivh /mnt/iso/rhel7/64/zabbix-agent-4017.rpm
+           sudo rpm -ivh /mnt/iso/rhel7/64/zabbix-agent-4017.rpm
         else
             if [ "$BITNESS" == "64" ]; then
-                rpm -ivh /mnt/iso/rhel6/64/zabbix-agent-4017.rpm
+             sudo   rpm -ivh /mnt/iso/rhel6/64/zabbix-agent-4017.rpm
             else
-                rpm -ivh /mnt/iso/rhel6/32/zabbix-agent-4017.rpm
+             sudo   rpm -ivh /mnt/iso/rhel6/32/zabbix-agent-4017.rpm
             fi 
         fi
     ;;
